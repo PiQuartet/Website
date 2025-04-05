@@ -25,7 +25,7 @@
 .site-nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #1a1a1a;
+  color: #dedcdc;
   font-weight: 500;
 }
 
@@ -34,7 +34,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #bac3cc;
+  background-color: #0f0f0f;
   color: #333;
   max-width: 800px;
   margin: 0 auto;
