@@ -5,8 +5,6 @@
   align-items: center;
   padding: 30px 20px;
   background-color: transparent; /* or whatever your background is */
-  border-bottom: 1px solid #e5e5e5;
-  position: sticky;
   top: 0;
 }
 
