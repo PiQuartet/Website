@@ -23,7 +23,13 @@ nav a:hover {
 main {
     padding: 2em;
 }
-
+.centered-image {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  width: 800px; /* Adjust this number as needed */
+  height: auto;
+}
 footer {
     text-align: center;
     padding: 1em;
