@@ -27,11 +27,11 @@
 }
 
 .site-nav a:hover {
-  color: #1a73e8;
+  color: #91a89e;
 }
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f8f9fa;
+  background-color: #bac3cc;
   color: #333;
   max-width: 800px;
   margin: 0 auto;
