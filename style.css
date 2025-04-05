@@ -1,20 +1,36 @@
-/* Logo on the left */
+/* Header Container */
+.site-header {
+  display: flex;
+  justify-content: space-between; /* ← pushes logo left, nav right */
+  align-items: center;
+  padding: 30px 20px;
+  background-color: transparent; /* or whatever your background is */
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #111;
 }
 
-/* Nav on the right */
+/* Navigation */
+.site-nav {
+  display: flex;
+}
+
 .site-nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #ededed;
+  color: #1a1a1a;
   font-weight: 500;
 }
 
 .site-nav a:hover {
-  color: #91a89e;
+  color: #1a73e8;
 }
 body {
   font-family: 'Inter', sans-serif;
