@@ -9,7 +9,7 @@
 }
 /* Logo */
 .logo img {
-  width: 270px;
+  width: 300px;
   height: auto; /* Adjust this size as needed */
   margin-right: 3px;     /* 👈 control spacing manually */
   display: block;
