@@ -9,7 +9,8 @@
 }
 /* Logo */
 .logo img {
-  height: 70px; /* Adjust this size as needed */
+  width: 120px;
+  height: auto; /* Adjust this size as needed */
   margin-right: 4px;     /* 👈 control spacing manually */
   display: block;
 }
