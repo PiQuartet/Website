@@ -7,17 +7,26 @@
   background-color: transparent; /* or whatever your background is */
   top: 0;
 }
-
 /* Logo */
 .logo img {
   height: 30px; /* Adjust this size as needed */
+  margin-right: 4px;     /* 👈 control spacing manually */
+  display: block;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
 }
 
 /* Navigation */
 .site-nav {
   display: flex;
 }
-
 .site-nav a {
   margin-left: 20px;
   text-decoration: none;
