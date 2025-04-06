@@ -3,13 +3,13 @@
   display: flex;
   justify-content: space-between; /* ← pushes logo left, nav right */
   align-items: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: transparent; /* or whatever your background is */
   top: 0;
 }
 /* Logo */
 .logo img {
-  width: 250px;
+  width: 270px;
   height: auto; /* Adjust this size as needed */
   margin-right: 3px;     /* 👈 control spacing manually */
   display: block;
