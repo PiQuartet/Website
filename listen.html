@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Listen – Pi Quartet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Pi Quartet logo">
+      <span>Pi Quartet</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="concerts.html">Concerts</a>
+      <a href="listen.html">Listen</a>
+    </nav>
+  </header>
+
+  <main class="video-section">
+    <h1>Listen to Pi Quartet</h1>
+
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/0mnXw9a9T_8" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/l3QL0fUVuy0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/RprPrhPvJq4" allowfullscreen></iframe>
+    </div>
+  </main>
+</body>
+</html>
