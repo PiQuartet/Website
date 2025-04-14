@@ -1,38 +1,40 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  background-color: #000; /* black background */
+  background-color: #000;
   padding: 20px 40px;
+  color: #fff;
+  
+.header-left {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #fff;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.header-center {
+  text-align: center;
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
   width: auto;
 }
 
-.site-title {
-  font-size: 2rem;      /* make it big */
-  font-weight: 700;
-  color: #fff;
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
-.header-nav a {
+.header-right a {
   color: #fff;
   text-decoration: none;
-  margin-left: 24px;
-  font-size: 1rem;
   font-weight: 500;
 }
 
-.header-nav a:hover {
+.header-right a:hover {
   text-decoration: underline;
 }
 
