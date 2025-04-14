@@ -1,43 +1,40 @@
 .main-header {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  background-color: #000; /* black background */
   padding: 20px 40px;
-  color: #fff;
-  
-.header-left {
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: bold;
   color: #fff;
 }
 
-.header-center {
-  text-align: center;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .logo {
-  height: 60px;
+  height: 70px;
   width: auto;
 }
 
-.header-right {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+.site-title {
+  font-size: 2rem;      /* make it big */
+  font-weight: 700;
+  color: #fff;
 }
 
-.header-right a {
+.header-nav a {
   color: #fff;
   text-decoration: none;
+  margin-left: 24px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
-.header-right a:hover {
+.header-nav a:hover {
   text-decoration: underline;
 }
-
 body {
   font-family: 'Source Code Pro', monospace;
   background-color: #0f0f0f;
