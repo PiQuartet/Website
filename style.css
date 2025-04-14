@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: transparent;
   width: 100%;
   padding: 16px 40px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
