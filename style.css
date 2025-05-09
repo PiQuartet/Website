@@ -97,6 +97,35 @@ main {
 #mc_embed_signup input[type="submit"]:hover {
   background-color: #333;
 }
+form {
+  max-width: 500px;
+  margin-top: 2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  padding: 0.5em 1em;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
 footer {
     text-align: center;
     padding: 1em;
