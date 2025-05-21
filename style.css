@@ -135,7 +135,7 @@ button[type="submit"]:hover {
 .news-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #000;
+  color: white;
 }
 
 .news-item {
@@ -145,7 +145,7 @@ button[type="submit"]:hover {
 .news-item h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: white;
 }
 
 .news-item p {
