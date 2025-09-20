@@ -1,7 +1,7 @@
 name: "Website"
 media:
-  folder: "media"
-  public_url: "/media"
+  folder: "images"
+  public_url: "/images"
 collections:
   -
     name: "content_pages"
