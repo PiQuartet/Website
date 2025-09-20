@@ -1,0 +1,19 @@
+title: "Your Site"
+description: "Integrated with Jekyll + Decap CMS"
+# Keep your existing design; we won't force a remote theme.
+# You can add a theme later by setting 'remote_theme' here.
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+# Defaults (use a simple layout for events page only)
+defaults:
+  - scope: { path: "", type: "events" }
+    values: { layout: event }
+
+# Build options
+markdown: kramdown
+permalink: pretty
