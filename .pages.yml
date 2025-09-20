@@ -1,0 +1,24 @@
+name: "Website"
+media:
+  folder: "media"
+  public_url: "/media"
+collections:
+  -
+    name: "content_pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    format: "frontmatter"
+    fields:
+      -
+        label: "Title"
+        name: "title"
+        type: "string"
+      -
+        label: "Slug"
+        name: "slug"
+        type: "string"
+      -
+        label: "Body"
+        name: "body"
+        type: "markdown"
