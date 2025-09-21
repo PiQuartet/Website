@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-site",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "gatsby": "^5.13.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "gatsby-plugin-mdx": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "@mdx-js/react": "^3.0.0",
+    "@mdx-js/mdx": "^3.0.0",
+    "@fontsource-variable/mulish": "^5.0.17"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  }
+}
