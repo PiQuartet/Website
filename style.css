@@ -1,54 +1,72 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #000; /* black background */
+  align-items: flex-end;       /* bottom-align logo + nav */
+  gap: 24px;
+  background-color: #000;
   padding: 20px 40px;
   color: #fff;
 }
 
+/* If your nav is a <ul>, this normalizes it */
+.header-nav {
+  display: flex;               /* keep links in one line */
+  align-items: flex-end;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header-left {
   display: flex;
-  align-items: center;
+  align-items: flex-end;       /* title sits on logo bottom */
   gap: 16px;
 }
 
 .logo {
   height: 70px;
   width: auto;
+  display: block;
 }
 
 .site-title {
-  font-size: 2rem;      /* make it big */
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
+  line-height: 1;              /* tighter baseline with logo */
+  margin: 0;
 }
 
 .header-nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 24px;
   font-size: 1rem;
   font-weight: 500;
 }
 
-.header-nav a:hover {
+.header-nav a:hover,
+.header-nav a:focus {
   text-decoration: underline;
 }
+
+/* ---- Global ---- */
 body {
-  font-family: 'Kumbh Sans'
+  font-family: 'Kumbh Sans', monospace;  /* FIXED */
   background-color: #0f0f0f;
   color: #e6e1e1;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0px 0px;
+  padding: 0;
   line-height: 1.7;
 }
+
 h1, h2 {
   font-weight: 700;
   letter-spacing: -0.5px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
 img {
   display: block;
   margin: 40px auto;
@@ -56,27 +74,26 @@ img {
   max-width: 100%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 a {
   color: #1a73e8;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-main {
-    padding: 2em;
-}
+a:hover { text-decoration: underline; }
+
+main { padding: 2em; }
+
 .centered-image {
   display: block;
   margin: 40px auto;
   max-width: 100%;
-  width: 800px; /* Adjust this number as needed */
+  width: 800px;
   height: auto;
 }
-#mc_embed_signup {
-  margin-top: 2rem;
-}
+
+/* Mailchimp */
+#mc_embed_signup { margin-top: 2rem; }
 
 #mc_embed_signup input[type="email"] {
   padding: 0.5em;
@@ -97,10 +114,9 @@ main {
 #mc_embed_signup input[type="submit"]:hover {
   background-color: #333;
 }
-form {
-  max-width: 500px;
-  margin-top: 2rem;
-}
+
+/* Forms */
+form { max-width: 500px; margin-top: 2rem; }
 
 input, textarea {
   width: 100%;
@@ -122,9 +138,9 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
-  background-color: #333;
-}
+button[type="submit"]:hover { background-color: #333; }
+
+/* News section */
 .news-section {
   max-width: 800px;
   margin: 4rem auto;
@@ -132,30 +148,29 @@ button[type="submit"]:hover {
   border-top: 2px solid #ccc;
 }
 
-.news-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: white;
-}
+.news-section h2,
+.news-item h3 { color: #fff; }
 
-.news-item {
-  margin-bottom: 2rem;
-}
+.news-item { margin-bottom: 2rem; }
+.news-item p { margin: 0; line-height: 1.6; }
 
-.news-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: white;
-}
-
-.news-item p {
-  margin: 0;
-  line-height: 1.6;
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: white;
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
 }
+
+/* ---- Responsive header stacking ---- */
+@media (max-width: 720px) {
+  .main-header {
+    flex-wrap: wrap;
+    align-items: center;       /* center when stacked */
+    gap: 12px 16px;
+    padding: 16px 20px;
+  }
+  .header-left { width: 100%; justify-content: space-between; }
+  .header-nav { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
+}
+
