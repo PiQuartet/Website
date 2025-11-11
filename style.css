@@ -35,14 +35,14 @@
 .header-nav a:hover {
   text-decoration: underline;
 }
-body 
-.kumbh-sans-<uniquifier> {
-  font-family: "Kumbh Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "YOPQ" 300;
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #0f0f0f;
+  color: #e6e1e1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 0px;
+  line-height: 1.7;
 }
 h1, h2 {
   font-weight: 700;
